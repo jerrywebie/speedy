@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resources/css/stylesheet.css">
+    <title>contact</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="logo">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-stack-1x fa-inverse">S</i>
+                </span>
+                <span class="logo-text">peedy</span>
+            </div>
+            <div class="top-nav">
+                <a href="login.html">login</a>
+                <a href="signup.html">sign up</a>
+            </div>
+        </header>
+        <nav>
+            <ul class="main-nav" id="main-menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="cars/car-gallery.html">cars</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+            <a href="#" class="icon-menu" onclick="hideNavigation()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <main>
+            <section class="contact-section">
+                <div class="contact-item">
+                    <h2 class="form-title">Get in Touch</h2>
+                    <div class="address-div">
+                        <h3>Head Office</h3>
+                        Visit us at:<br>
+                        <i>www.speedy.com</i> <br>
+                        Box 564, Disneyland.<br>
+                        USA 00985.
+                    </div>
+            </section>
+            <section>
+                <form method="POST" action="/contact" id="contact-form">
+                    <input type="text" name="name" id="user-name" placeholder="your name">
+                    <input type="email" name="mail" id="user-mail" placeholder="your email">
+                    <textarea name="question" id="user-question" rows="10" cols="30"
+                        placeholder="questions/comments"></textarea>
+                    <input type="submit" name="submit-btn" id="contact" value="send">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <div class="footer-note">
+                    <h3>company</h3>
+                    <a href="#">who we are</a>
+                    <a href="#">inspiration</a>
+                    <a href="#">offer</a>
+                    <a href="#">contact</a>
+                </div>
+                <div class="footer-note">
+                    <h3>branches</h3>
+                    <a href="#">south East Asia</a>
+                    <a href="#">asia</a>
+                    <a href="#">europe</a>
+                    <a href="#">north America</a>
+                    <a href="#">south America</a>
+                    <a href="#">africa</a>
+                    <a href="#">australia</a>
+                </div>
+                <div class="footer-note">
+                    <h3>sales and services</h3>
+                    <a href="#">showrooms</a>
+                    <a href="#">promotions</a>
+                    <a href="#">gifts and vouchers</a>
+                    <a href="#">services after sales</a>
+                    <a href="#">order inquiry</a>
+                    <a href="#">trade in inquiry</a>
+                    <a href="#">customer cares</a>
+                    <a href="#">delivery</a>
+                </div>
+                <div class="footer-note">
+                    <h3>terms and conditions</h3>
+                    <a href="#">agreements and contracts</a>
+                    <a href="#">contact with respresentatives</a>
+                </div>
+            </section>
+            <section class="footer-text">
+                2019&copy;All rights reserved.Developed by Jerry.
+                <a href="#" class="btn-social"><i class="social fa fa-facebook-official"></i></a>
+                <a href="#" class="btn-social"><i class="social fa fa-google-plus-square"> </i></a>
+                <a href="#" class="btn-social"><i class="social fa fa-twitter-square"></i></a>
+                <a href="#" class="btn-social"><i class="social fa fa-whatsapp"></i></a>
+            </section>
+        </footer>
+    </div>
+    <script src="resources/js/speedy.js"></script>
+</body>
+
+</html>

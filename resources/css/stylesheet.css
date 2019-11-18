@@ -1,0 +1,622 @@
+/*
+=====================
+ layout style
+=====================
+*/
+
+body{
+    padding:0;
+    margin:0;   
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper{
+    width:100%;
+    margin:0 auto;
+    background-color:transparent;
+}
+header , nav , main , footer {
+    width:96%;
+    margin:2% auto;
+    position: relative;    
+}
+
+/*
+=====================
+ header style
+=====================
+*/
+
+header div.logo{
+    width:200px;
+    position: absolute;
+    left:0;
+    top:-7px;
+}
+div.logo span.fa-stack {    
+    width: 4em;
+    height: 2em;
+    line-height: 1.8em;
+    color:#5a7a64;    
+}
+div.logo span.logo-text{
+    position: absolute;
+    color:#5a7a64;
+    top:20px;
+    left:70px;
+    font-style: italic;
+}
+div.logo span.fa-lg{
+    font-size:24px;
+}
+div.logo span i.fa-inverse{
+    font-style: italic;
+    font-size: 30px;
+}
+header div.top-nav{
+    width:200px;
+    position: absolute;
+    right:0;
+    top:5px;
+}
+header div.top-nav a{
+    font-size: 12px;
+    border:1px solid #5a7670;
+    padding:5px 10px;
+    border-radius:3px;
+    margin-left:30px;
+    text-decoration: none;
+    color:#5a7670;
+}
+
+/*
+=====================
+ navigation style
+=====================
+*/
+
+nav{     
+   border-top:1px solid #ccc; 
+    padding:10px 0;    
+    top:40px; 
+    position: relative;
+}
+nav ul.main-nav{ 
+    text-align: center;    
+}
+nav ul.main-nav li{
+    display: inline-block;     
+    width:150px;
+    padding:5px 15px;    
+}
+ul.main-nav li a{
+    text-decoration: none;  
+    text-transform:uppercase;
+    font-size:18px; 
+    letter-spacing: 1px;  
+    color:#5a7670;
+    font-weight: 700;
+}
+ul.main-nav li a:hover{   
+    color:#3fb0ac;   
+}
+.icon-menu{  
+    display:none;  
+    position:absolute;
+    right:0px;
+    top:5px;
+    font-size:28px;
+    background-color:  #5D6D7E;
+    border:1px solid #5D6D7E;
+    color:#f0f0f0;
+    padding:3px 8px;
+    border-radius: 5px;
+}
+
+/*
+=====================
+ main content style(index.html)
+=====================
+*/
+main{
+    padding:10px 0;    
+}
+main section {    
+    box-sizing: border-box;   
+    padding:5% 10%;
+}
+main section h2{
+    font-weight: 800;
+}
+section.motto-section{
+    text-align: center;
+    background-color: #f6f6f8;
+    color:#173e43;
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+section.text-section {  
+    background-color: #f6f6f8;
+    color:#2f3531;
+    padding-top:20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+section.text-section p.home-para{
+    text-align: center;
+}
+section.extra-note-section{
+    text-align: center;
+    background-color: transparent;
+}
+section.extra-note-section div.note-item{       
+    box-sizing: border-box;
+    border-radius: 4px;
+    width:160px;
+    height:60px;    
+    text-align:center;
+    border:1px solid #5D6D7E;
+    display: inline-block;
+    padding:20px 16px;    
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #5D6D7E;
+}
+div.note-item a{
+    color:#f0f0f0;
+    text-decoration: none;
+}
+section.logo-section{
+    border:1px solid transparent;  
+}
+div.logo-container{
+    box-sizing: border-box;
+    border-radius: 4px;
+    width:200px;
+    height:auto;
+    text-align: center;
+    border: 1px solid #eeeeee;
+    display: inline-block;
+    margin:2px;  
+}
+figure.logo-item{
+    margin:0;
+}
+figure.logo-item img{
+    width:190px;
+    height:130px;
+    padding:2px;
+}
+
+/*
+=====================
+ car gallery style
+=====================
+*/
+
+section.clear-section{
+    clear:both;
+}
+section div.item-container{
+    width:25%;
+    float:left;
+    margin:6px auto;
+    box-sizing: border-box;      
+}
+section figure.item{
+    display: inline-block;
+    border:1px solid #eee;  
+    border-radius: 3px;
+    margin:0;
+}
+.img-responsive{
+    max-width:100%;
+}
+section figure.item:hover{  
+    border:1px solid #3fb0ac; 
+    border-radius: 3px;
+} 
+
+/*section.gallery-section{
+    text-align: center;
+    background-color: transparent;
+}
+figure.gallery-item{
+   width:300px;
+    width:30%;
+    float:left;
+    border:1px solid transparent;    
+    border-radius: 3px;
+    margin:0;
+  /* padding:2px 8px;*/
+  /*  display:inline-block;    
+    padding: 5px 5px 10px 5px; 
+    background-color:transparent;
+    box-shadow: 3px 3px 3px transparent;
+}
+figure.gallery-item:hover{
+    border:1px solid #eeeeee;
+    padding: 5px 5px 10px 5px; 
+    background-color: white;
+    box-shadow: 3px 3px 3px #ccc;
+}
+figure.gallery-item img{
+   width:200px;
+    height:150px;
+    max-width:100%;
+    height:auto;
+}
+figure.gallery-item figcaption {
+    padding:3px;
+    font-size: 14px;
+    color: #5a7670;
+    text-align:center;
+}*/
+
+/*
+=====================
+contact form style
+=====================
+*/
+main section form {
+    width:60%; 
+    text-align: center;
+    margin:0 20%;     
+}
+section.contact-section{
+    padding-bottom:0px;
+}
+.contact-item{
+    width:50%;
+    margin:0 25%; 
+}
+.contact-item h2.form-title{
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color:#5a7670;
+}
+.address-div{  
+    font-weight: 500; 
+    color:#b1b1b1;   
+}
+form textarea , form input[type="text"] , form input[type="email"],form input[type="password"]
+{
+    width:90%;  
+    padding:15px 0 15px 12px;
+    border-radius: 4px;
+    border:1px solid #ccc;   
+    margin-bottom:8px; 
+}
+form input#contact{
+    background-color:#5a7670; 
+    color: #f0f0f0;   
+    padding:6px 25px;
+    width:auto;  
+    border-radius: 4px;
+    border:1px solid #ccc;  
+}
+/*
+=====================
+ login and sign up form style
+=====================
+*/
+form#login-form{     
+    border:1px solid #ccc;
+    padding:20px;
+    border-radius: 3px;
+}
+section h4.form-title{
+    letter-spacing: 1px;
+    color:#5a7670;
+    text-align: center;
+    padding-bottom: 2px;
+}
+form input#login , form input#cancel {
+    display: inline-block;
+    background-color:#5a7670; 
+    color: #f0f0f0;   
+    padding:6px 25px;
+    width:auto; 
+    border-radius: 4px;
+    border:1px solid #ccc;  
+}
+form input#cancel{
+    background-color: #9fa8a3;
+}
+form div.check-terms{
+    float:left;
+    padding:5px 0px 20px 12px;
+}
+form div.btn-div{
+    clear:both;
+    padding:5px 0px 20px 12px;
+  }
+form div.check-terms input#terms{
+    width:50px;
+}
+form div.check-terms label{
+    width:250px;
+    font-size: 13px;   
+}
+
+/*
+=====================
+ service style
+=====================
+*/
+section.text-section i.text-title, section.text-section p.service-para{    
+    text-align:left;
+    padding-top:30px;
+}
+i.text-title{
+    color:#3fb0ac;  
+    font-size: 20px;
+    letter-spacing:8px;   
+    font-weight: 600; 
+}
+
+i.text-title span{
+    padding-left: 8px;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*
+=====================
+ footer style
+=====================
+*/
+footer{ 
+    clear: both;   
+    padding:5px 0;         
+    background:#c2dde6; 
+    text-transform:capitalize;   
+}
+footer section{   
+    box-sizing: border-box;  
+    text-align: center;
+}
+footer section div.footer-note{
+    width:24%;
+    float:left;
+    margin:0 6px;
+    color:#5a7670;
+    box-sizing: border-box;    
+}
+footer section div.footer-note a{
+    display:block;
+    color:#5a7670;
+    line-height:38px;    
+    text-decoration:none;     
+}
+footer section div.footer-note a:hover{
+    color:#f0f0f0;   
+}
+footer section.footer-text{      
+    clear: both;     
+    text-align: center;   
+    font-size: 16px;
+    padding-top: 8px;
+    margin-bottom:-10px;
+    height:80px;
+    color:#f0f0f0;
+    background-color:#5a7670;
+}
+footer section.footer-text a{
+    color:#f0f0f0;
+    font-size: 20px;
+    padding:0 5px;    
+}
+/*
+=====================
+ media queries
+=====================
+*/
+@media screen and (max-width:320px){ 
+    .icon-menu{  
+        display:block; 
+    }
+    nav ul.main-nav li{
+        visibility: hidden;
+        display: inline;
+    } 
+    nav ul.main-nav.responsive-menu {
+        position: relative;
+        top:20px;
+     }
+    nav ul.main-nav.responsive-menu li { 
+        visibility: visible;            
+        display: block;
+        width:100%;
+        text-align: left; 
+        padding:15px 0px;         
+    }      
+    section.extra-note-section div.note-item {
+        margin-top: 1.5%;
+    }
+    section div.item-container{
+        width:100%;
+        float:none;       
+    }
+    section figure.item{
+        display: block;
+        padding:0;
+        margin:0;
+    }
+    figure.item img{
+        width:500px;
+        height:auto;
+    }
+    footer section div.footer-note {
+        width: 100%;
+    }
+    main section form {
+        width:100%;
+        margin:0 auto;
+    }
+    form#login-form{
+        padding:10px 5px;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    /*body{
+        background-color:orange;
+    }*/
+    .icon-menu{  
+        display:block; 
+    }
+    nav ul.main-nav li{
+        visibility: hidden;
+        display: inline;
+    } 
+    nav ul.main-nav.responsive-menu {
+        position: relative;
+        top:20px;
+     }
+    nav ul.main-nav.responsive-menu li { 
+        visibility: visible;            
+        display: block;
+        width:100%;
+        text-align: left; 
+        padding:15px 0px;         
+    }    
+    section.extra-note-section div.note-item {
+        margin-top: 1.5%;
+    }
+    section div.item-container{
+        width:100%;
+        float:none;       
+    }
+    section figure.item{
+        display: block;
+        padding:0;
+        margin:0;
+    }
+    figure.item img{
+        width:500px;
+        height:auto;
+    }
+    footer section div.footer-note {
+        width: 100%;
+    }
+    main section form {
+        width:100%;
+        margin:0 auto;
+    }
+    form#login-form{
+        padding:10px 5px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 699px) {
+   /* body{
+        background-color:skyblue;
+    }*/
+    .icon-menu{  
+        display:block; 
+    }
+    nav ul.main-nav li{
+        visibility: hidden;
+        display: inline; 
+    } 
+    nav ul.main-nav.responsive-menu {
+        position: relative;
+        top:20px;
+     }
+    nav ul.main-nav.responsive-menu li { 
+        visibility: visible;            
+        display: block;
+        width:100%;
+        text-align: left; 
+        padding:15px 0px;         
+    }    
+    section.extra-note-section {
+        padding: 30px 0px;
+    }
+    section.extra-note-section div.note-item {
+        margin:0px;
+    }
+    figure.logo-item img {
+      /*  width: 145px;
+        height: 120px;
+        padding: 2px;*/
+        width:100%;
+    }    
+    div.logo-container {    
+        width: 150px;
+    }    
+    main section form {
+        width:100%;
+        margin:0 auto;
+    }
+    section div.item-container{
+        width:100%;
+        float:none;       
+    }
+    section figure.item{
+        display: block;
+        padding:0;
+        margin:0;
+    }
+    figure.item img{
+        width:500px;
+        height:auto;
+    }
+    form#login-form{
+        padding:10px 5px;
+    }   
+    footer section div.footer-note {
+        margin:0px;
+        width:48%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width:968px) {
+    /*body{
+        background-color:khaki;
+    } */
+    .icon-menu{  
+        display:block; 
+    }
+    nav ul.main-nav li{
+        visibility: hidden; 
+        display: inline;      
+    } 
+    nav ul.main-nav.responsive-menu {
+        position: relative;
+        top:20px;       
+     }
+    nav ul.main-nav.responsive-menu li { 
+        visibility: visible;            
+        display: block;
+        width:100%;
+        text-align: left; 
+        padding:15px 0px;         
+    }    
+    div.logo-container {    
+        width: 135px;
+    }    
+    footer section div.footer-note {
+        width: 23%;
+    }
+    section div.item-container{
+        width:50%;
+        float:left;
+        margin:6px 0;
+    }
+}
+@media screen and (min-width:969px) {  
+    section div.item-container{
+        width:25%;
+        float:left;
+        margin:6px auto;
+        box-sizing: border-box;
+    }     
+    footer section div.footer-note {
+        width: 23%;
+    }
+}
+
